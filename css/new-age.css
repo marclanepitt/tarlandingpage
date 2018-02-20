@@ -10,6 +10,11 @@ body {
     border-radius: 0;
 }
 
+
+.school-link {
+  cursor: pointer;
+}
+
 .ratio {
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,7 +34,18 @@ body {
     max-width: 100%;
 }
 
+.raised-card {
+      box-shadow: 3px 5px 5px 5px #888888;
+      height:500px;
+      margin-top: 80px;
+  background: url("../img/bg-pattern.png"), #4B9CD3;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #4B9CD3);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #4B9CD3);
+}
 
+.btn-custom:hover {
+  background-color: lightgrey !important;
+}
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -174,7 +190,7 @@ section h2 {
   }
 }
 
-header.masthead {
+section.masthead {
   position: relative;
   width: 100%;
   padding-top: 150px;
@@ -185,41 +201,47 @@ header.masthead {
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #4B9CD3);
 }
 
-header.masthead .header-content {
+section.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
   text-align: center;
 }
 
-header.masthead .header-content h1 {
+section.masthead .header-content h1 {
   font-size: 30px;
 }
 
-header.masthead .device-container {
+section.masthead .device-container {
   max-width: 325px;
   margin-right: auto;
   margin-left: auto;
 }
 
-header.masthead .device-container .screen img {
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+section.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
 @media (min-width: 992px) {
-  header.masthead {
+  section.masthead {
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead .header-content {
+  section.masthead .header-content {
     margin-bottom: 0;
     text-align: left;
   }
-  header.masthead .header-content h1 {
+  section.masthead .header-content h1 {
     font-size: 50px;
   }
-  header.masthead .device-container {
+  section.masthead .device-container {
     max-width: 325px;
   }
 }
@@ -261,9 +283,6 @@ section.download .badges .badge-link img {
   }
 }
 
-section.features .section-heading {
-  margin-bottom: 100px;
-}
 
 section.features .section-heading h2 {
   margin-top: 0;
@@ -303,8 +322,7 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-linear-gradient(to left, #4B9CD3, #4B9CD3);
-  background: linear-gradient(to left, #4B9CD3, #4B9CD3);
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
